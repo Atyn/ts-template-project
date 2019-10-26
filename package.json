@@ -1,0 +1,38 @@
+{
+	"name": "ts-template-project",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A starting point for most Typescript base client projects",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm run build && npm run watch-and-serve",
+		"clean": "git clean -Xdf",
+		"build-static-page": "lerna run build-static-page",
+		"build-bundle": "lerna run build-bundle",
+		"watch-and-serve": "concurrently 'npm run watch' 'npm run serve'",
+		"serve": "lerna run serve --stream",
+		"postinstall": "lerna bootstrap --hoist",
+		"watch": "lerna run watch --parallel",
+		"lint": "eslint --max-warnings 0 --ignore-path .gitignore . && prettier --check --ignore-path .gitignore .",
+		"lint:fix": "eslint --fix --max-warnings 0 --ignore-path .gitignore . && prettier --write --ignore-path .gitignore .",
+		"test": "lerna run test --parallel",
+		"build": "lerna run build"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.5.0",
+		"@typescript-eslint/parser": "^2.5.0",
+		"concurrently": "4.1.0",
+		"eslint": "^7.15.0",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-filenames": "^1.3.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-json": "^2.0.1",
+		"eslint-plugin-prettier": "^3.2.0",
+		"lerna": "3.16.5",
+		"prettier": "^2.2.1",
+		"typescript": "^4.1.2"
+	},
+	"engines": {
+		"node": ">=12.13"
+	}
+}

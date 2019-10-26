@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<style>
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body></body>
+	<script>
+		window.process = {
+			env: {
+				NODE_ENV: 'development',
+			},
+		}
+	</script>
+	<script type="module">
+		import '@local/webapp/src/StartApp.mjs'
+	</script>
+</html>

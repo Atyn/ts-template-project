@@ -1,0 +1,22 @@
+{
+	"name": "@local/dev-serve",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"main": "dist/App.js",
+	"scripts": {
+		"serve": "web-dev-server"
+	},
+	"devDependencies": {
+		"@web/dev-server": "^0.1.5",
+		"@web/dev-server-esbuild": "^0.2.11",
+		"@web/dev-server-rollup": "^0.3.2",
+		"@rollup/plugin-commonjs": "^17.1.0"
+	},
+	"dependencies": {
+		"@local/webapp": "0.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"@local/react-frontend": "0.0.0"
+	}
+}
