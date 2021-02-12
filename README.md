@@ -1,6 +1,6 @@
 ![Build](https://github.com/Atyn/ts-template-project/workflows/Build/badge.svg)
 
-# A starting for TypeScript project
+# A starting point for TypeScript projects
 
 ## Getting started
 
