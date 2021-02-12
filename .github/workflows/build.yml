@@ -58,5 +58,4 @@ jobs:
           token: ${{ github.token }}
           status: ${{ job.status }}
           ref: ${{ github.sha }}
-          deployment_id: ${{ github.event.deployment.id }}
           env_url: 'https://www.google.com'
