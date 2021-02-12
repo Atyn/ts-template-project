@@ -44,7 +44,6 @@ jobs:
           step: start
           token: ${{ github.token }}
           env: test
-          ref: ${{ github.sha }}
       - name: Download artifacts
         uses: actions/download-artifact@v1
         with:
@@ -56,6 +55,5 @@ jobs:
           step: finish
           token: ${{ github.token }}
           status: ${{ job.status }}
-          ref: ${{ github.sha }}
           env_url: 'https://www.google.com'
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
