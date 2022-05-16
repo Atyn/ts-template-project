@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import ReactDOM from 'react-dom'
 import App from '../../serve/src/node_modules/@local/react-frontend'
 

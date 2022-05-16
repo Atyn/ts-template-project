@@ -1,26 +1,25 @@
 {
 	"name": "@local/webapp",
-	"private": true,
 	"version": "0.0.0",
 	"main": "bin/generateStaticPage.js",
 	"scripts": {
-		"build-static-page": "ts-node ./bin/generateStaticPage.mjs",
+		"build-static-page": "ts-node ./bin/generateStaticPage.ts",
 		"build-bundle": "webpack --config webpack.config.js && cp html/index.html dist/client",
-		"watch-bundle": "nodemon ./bin/generateStaticPage.mjs"
+		"watch-bundle": "nodemon ./bin/generateStaticPage.ts"
 	},
 	"devDependencies": {
 		"eslint": "^7.15.0",
 		"eslint-plugin-react": "^7.16.0",
 		"nodemon": "^2.0.4",
-		"typescript": "^4.1.2",
 		"ts-node": "^9.1.0",
+		"typescript": "^4.1.2",
 		"watchdeps": "^1.0.2"
 	},
 	"dependencies": {
+		"@local/react-frontend": "0.0.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
-		"@local/react-frontend": "0.0.0",
 		"webpack": "^4.43.0",
-		"webpack-cli": "^3.3.11"
+		"webpack-cli": "^4.9.2"
 	}
 }

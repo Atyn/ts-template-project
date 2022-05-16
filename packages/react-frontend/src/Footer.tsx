@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import IHeaderConfig from '@local/types/IHeaderConfig'
 
 export default (props: { headerConfig: IHeaderConfig }) => (
