@@ -1,12 +1,16 @@
-import React from 'react'
+import * as React from 'react'
 import IAppConfig from '@local/types/IAppConfig'
 import Header from './Header'
 
 export default class extends React.Component {
 	props: {
 		appConfig: IAppConfig
+	} = {
+		appConfig: {
+			headerConfig: {},
+		},
 	}
-	render() {
+	render(): JSX.Element {
 		return (
 			<div
 				style={{

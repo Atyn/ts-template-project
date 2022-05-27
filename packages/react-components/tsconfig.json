@@ -3,8 +3,11 @@
 	"compilerOptions": {
 		"outDir": "./dist",
 		"rootDir": "./src",
+		"jsx": "react",
 		"tsBuildInfoFile": "tmp/tsbuildinfo",
-		"baseUrl": "."
+		"baseUrl": ".",
+		"composite": true,
+		"noImplicitAny": true
 	},
 	"include": ["src", "src/**/*.json", "src/*.json"]
 }

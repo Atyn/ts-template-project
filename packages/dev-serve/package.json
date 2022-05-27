@@ -2,21 +2,21 @@
 	"name": "@local/dev-serve",
 	"private": true,
 	"version": "0.0.0",
-	"type": "module",
-	"main": "dist/App.js",
 	"scripts": {
-		"serve": "web-dev-server"
-	},
-	"devDependencies": {
-		"@web/dev-server": "^0.1.5",
-		"@web/dev-server-esbuild": "^0.2.11",
-		"@web/dev-server-rollup": "^0.3.2",
-		"@rollup/plugin-commonjs": "^17.1.0"
+		"serve": "vite ../../",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@local/webapp": "0.0.0",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"@local/react-frontend": "0.0.0"
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@local/react-components": "0.0.0",
+		"@local/types": "0.0.0",
+		"typescript": "^4.6.4",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@vitejs/plugin-react": "^1.3.0",
+		"vite": "^2.9.9"
 	}
 }

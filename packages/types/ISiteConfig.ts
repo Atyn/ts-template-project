@@ -1,3 +1,3 @@
-export default interface IAppConfig {
-  keywords: string[]
+export default interface ISiteConfig {
+	keywords: string[]
 }
