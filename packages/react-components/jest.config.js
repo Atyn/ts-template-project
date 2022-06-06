@@ -3,5 +3,5 @@ module.exports = {
 		'^.+\\.(ts|tsx)$': 'ts-jest',
 	},
 	cacheDirectory: 'tmp/jest/',
-	testMatch: ['**/__tests__/**/*.test.ts', '**/__tests__/**/*.test.tsx'],
+	testMatch: ['**/test/**/*.test.ts', '**/test/**/*.test.tsx'],
 }

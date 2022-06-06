@@ -1,6 +1,6 @@
 // import App from '../src/App'
 // import * as React from 'react'
-import { describe, assert, expect, test } from 'vitest'
+// import { describe, assert, expect, test, it } from 'chai'
 
 describe('Render App', () => {
 	it('should render without crashing', () => {
