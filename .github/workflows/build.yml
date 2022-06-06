@@ -25,8 +25,8 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - run: npm ci
-      - run: npm test
-      - run: npm lint
+      - run: npm run test
+      - run: npm run lint
       - run: npm run build
       - run: npm run build-bundle
       - uses: actions/upload-artifact@v2
