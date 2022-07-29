@@ -10,6 +10,7 @@
 	"scripts": {
 		"start": "npm run build && npm run watch-and-serve",
 		"clean": "git clean -Xdf",
+		"validate-code": "npm run --workspaces --if-present validate-code",
 		"build-static-page": "npm run --workspaces --if-present build-static-page",
 		"build-bundle": "npm run --workspaces --if-present build-bundle",
 		"watch-and-serve": "concurrently --raw 'npm run watch' 'npm run serve'",

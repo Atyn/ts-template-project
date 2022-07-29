@@ -10,7 +10,6 @@ export default (props: { headerConfig: IHeaderConfig }) => (
 			alignItems: 'center',
 			height: '300px',
 			backgroundColor: 'rgba(0,0,0,0.1)',
-			backgroundImage: props.headerConfig.backgroundUrl,
 		}}
 	>
 		<h2>{props.headerConfig.title}</h2>

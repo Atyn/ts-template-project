@@ -1,15 +1,16 @@
 {
-	"name": "@local/react-components",
+	"name": "@local/app",
 	"private": true,
 	"version": "0.0.0",
-	"main": "dist/index.js",
+	"main": "dist/AppStarter.js",
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc --watch",
 		"test": "jest"
 	},
 	"peerDependencies": {
-		"react": "^18.0.0"
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
 	},
 	"devDependencies": {
 		"@local/types": "0.0.0",
@@ -18,8 +19,8 @@
 		"vitest": "^0.0.2"
 	},
 	"dependencies": {
-		"@types/jest": "^28.1.1",
 		"@local/react-components": "0.0.0",
+		"@types/jest": "^28.1.1",
 		"chai": "^4.3.6",
 		"enzyme": "^3.11.0",
 		"jest": "^28.1.0",

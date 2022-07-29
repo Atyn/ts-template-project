@@ -7,6 +7,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@local/app": "0.0.0",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0"
 	},
