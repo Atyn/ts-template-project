@@ -1,6 +1,6 @@
 import * as React from 'react'
-import * as ReactDOM from 'react-dom'
 import { App } from '@local/react-components'
+import { createRoot } from 'react-dom/client'
 
 export default class AppStarter {
 	private element: Element
@@ -8,7 +8,8 @@ export default class AppStarter {
 		this.element = element
 	}
 	start() {
-		ReactDOM.render(
+		const root = createRoot(this.element)
+		root.render(
 			React.createElement(
 				App,
 				{
@@ -20,7 +21,6 @@ export default class AppStarter {
 				} as React.Attributes,
 				null,
 			),
-			this.element,
 		)
 	}
 }
