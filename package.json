@@ -19,7 +19,7 @@
 		"lint": "eslint --max-warnings 0 --ignore-path .gitignore . && prettier --check --ignore-path .gitignore .",
 		"lint:fix": "eslint --fix --max-warnings 0 --ignore-path .gitignore . && prettier --write --ignore-path .gitignore .",
 		"test": "npm run --workspaces --if-present test",
-		"build": "npm run --workspaces --if-present build"
+		"build": "npx lerna run build"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.23.0",
