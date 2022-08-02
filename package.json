@@ -15,11 +15,11 @@
 		"build-bundle": "npm run --workspaces --if-present build-bundle",
 		"watch-and-serve": "concurrently --raw 'npm run watch' 'npm run serve'",
 		"serve": "npm run --workspaces --if-present serve",
-		"watch": "npm run --workspaces --if-present watch",
+		"watch": "lerna run watch --parallel",
 		"lint": "eslint --max-warnings 0 --ignore-path .gitignore . && prettier --check --ignore-path .gitignore .",
 		"lint:fix": "eslint --fix --max-warnings 0 --ignore-path .gitignore . && prettier --write --ignore-path .gitignore .",
 		"test": "npm run --workspaces --if-present test",
-		"build": "npx lerna run build"
+		"build": "lerna run build"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.23.0",
